@@ -1,0 +1,45 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="95dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/gOverlay"
+        android:layout_alignStart="@+id/gOverlay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gesture: no gesture"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.gesture.GestureOverlayView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:fadeOffset="0"
+        android:fadeDuration="500"
+        android:id="@+id/gOverlay"
+        android:background="#FFFFFF"
+        android:gestureColor="#FF0000"
+        android:gestureStrokeType="single"
+        android:uncertainGestureColor="#FF0000"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:fadeEnabled="true">
+
+    </android.gesture.GestureOverlayView>
+
+</RelativeLayout>
